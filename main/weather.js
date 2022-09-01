@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 let weather = {
     "apiKey" : "1226e6dc93cc2969a1c3841eae91cace",
@@ -200,14 +199,6 @@ function getWeather(url,city){
       });
     }
 
-
-
-=======
-
-let weather = {
-    "apiKey" : "1226e6dc93cc2969a1c3841eae91cace",
-}
-
 function getWeatherByCoord(weatherApiUrl,city,lat,lon){
 
     fetch(weatherApiUrl).then((response)=> response.json()).then(function(weatherData){
@@ -404,6 +395,3 @@ function getWeather(url,city){
       });
     }
 
-
-
->>>>>>> 7681402bec74436b621c6dc654d9ed8836509083
