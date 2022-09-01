@@ -8,6 +8,7 @@ html{
     margin: auto;
 }
 body{
+ 
     font-family: Roboto,sans-serif;
     color: black;
     display: table-cell;
@@ -193,6 +194,7 @@ text-align: center;
 font-size: 67px;
 color:#FFF;
 border-radius: 15px;
+margin-bottom: 50px;
 }
 
 #nav{
@@ -264,6 +266,7 @@ footer{
   bottom: 0;
   left:0;
   margin:0;
+  
 }
 
 footer p{

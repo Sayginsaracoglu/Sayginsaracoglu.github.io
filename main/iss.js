@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //////////////////////////////ISS////////////////////////////////
 
 let weather = {
@@ -54,7 +54,7 @@ function issApiRequest(url){
 }
 //Get ISS position
 function getIssPosition(){
-  let url = "http://api.open-notify.org/iss-now.json"
+  let url = "https://api.wheretheiss.at/v1/satellites/25544"
   const card = document.getElementById("card1");
   card.classList.toggle('is-flipped');
 
