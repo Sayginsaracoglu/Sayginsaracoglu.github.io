@@ -1,0 +1,409 @@
+html body{
+    height: 100%;
+    
+    
+    background-size: 100%;
+  background-color: #ffffff;
+}
+
+html{
+    height: 100%;
+    display: table;
+    margin: auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-family: Roboto,sans-serif;
+    color: black;
+    
+   
+   
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     min-height: 75px;
+     min-width:700px;
+     
+     background-color: rgb(255, 255, 255) ;
+     
+     border-radius: 25px;
+     
+    
+     top:-15px;
+     margin-top:15px;
+     display: flex;
+     padding-bottom: 0.6%;
+     justify-content: center;
+     box-shadow: 1px 1px 19px rgb(7, 8, 8);
+     max-width: 1440px;
+     font-family: 'Michroma', sans-serif;
+     font-size: 50px;
+     font-weight: bolder;
+     
+ }
+ .btn{
+    border-radius: 0;
+ }
+
+ #section{
+    box-shadow: 1px 1px 15px black;
+    border-radius: 30px;
+    
+ }
+
+
+ #search-button.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  height: 55px;
+
+  margin-left: -10px;
+}
+
+
+#search-button:focus{
+    box-shadow: none;
+    border:none;
+    outline:none;
+    
+}
+
+#search-button:hover{
+    box-shadow: none;
+    border:none;
+    outline:none;
+    background-color: rgb(72, 161, 239);
+    
+}
+
+#location-button:hover {
+    box-shadow: none;
+    border:none;
+    outline:none;
+    color: rgb(5, 4, 4);
+    
+} 
+
+
+
+
+
+
+#search {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+#aircraft-card{
+  display: flex;
+  
+  padding-top:70%;
+   text-transform:capitalize ; 
+  
+   
+}
+.aircraft-card-shrink{
+    
+    transition: 1s;
+}
+
+
+.aircraft{
+    
+    width: 500px;
+    height: 806px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 1s;
+    box-shadow: 1px 1px 15px black;
+    
+}
+
+.print-aircraft{
+    
+    transition: transform 1s;
+    visibility: visible;
+    top:670px;
+    transform: translate(-50%,-50%) scale(1);
+   
+}
+
+
+#search-input{
+    
+    border: none;
+    align-self: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 55px;
+    padding-left: 15px;
+    width: 500px;
+   
+}
+
+#search-input:focus{
+    border: none;
+    outline: none;
+}
+
+
+.wind{
+    display: flex;
+    justify-content: space-evenly;
+    color: #000000;
+    
+    text-transform:none ; 
+}
+
+#speed{
+    text-transform:none ; 
+}
+
+#wind-arrow-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #ffffff;
+   margin-top: 10%;
+   
+   
+}
+
+#wind-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-size: 22px;
+   width: 70px;
+   height: 70px;
+   background-color: #dfdfdf;
+   border-radius: 50%;
+   box-shadow: 1px 1px 15px black;
+  
+}
+
+#con-icon{
+    margin-top: -50px;
+    
+}
+
+
+#top-section{
+    
+    padding-top:7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 10%;
+}
+
+#city1{
+  color:#000000;
+}
+
+#city {
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    font-size: 40px;
+}
+
+#temp{
+    
+    font-size: 2rem;
+    margin-bottom: 10%;
+}
+
+#condition{
+    font-size: 1.6rem;
+    
+color: #000000;
+
+}
+
+
+#map{
+    margin-left: -30px;
+    
+    
+    margin-top: 5%;
+    height: 252px;
+    width: 500px;
+   
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+  
+}
+
+#flag{
+    width: 24.33px;
+    height: 16.33px;
+    
+}
+
+#weather-title{
+    font-weight:bolder;
+}
+
+.container-pop{
+    opacity:20%;
+    filter: blur(1.1px);
+}
+
+.popup{
+    width: 400px;
+    height: 400px;
+    background-color: #03243D;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.5s, top 0,4s;
+    
+}
+
+.open-pop{
+    visibility: visible;
+    top:550px;
+    transform: translate(-50%,-50%) scale(1);
+    transition: .5s;
+}
+
+.popup img{
+    width: 110px;
+    margin: -195px;
+   
+}
+
+.popup h1{
+    color: white;
+    font-size: 45px;
+    margin: 55px 0 10px;
+}
+   
+
+.popup h2{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 65px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    height: 55px;
+    margin-top: 55px;
+    padding: 10px 0;
+    border: 0;
+    outline: none;
+    border-radius: 15px;
+    background-color: #4CAF50;
+    font-size: 25px;
+    color:white;
+    cursor: pointer;
+    box-shadow: 1px 2px 15px black;
+}
+
+#nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    width: 120px;
+    height: 600px;
+    top:25%;
+    left:-100px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+    box-shadow: 2px 2px 25px black;
+}
+  
+#nav:hover{
+    left: -10px;
+    top:25%;
+    transition: .5s;
+} 
+  
+.navButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+  
+#nav a:link{
+    text-decoration: none;
+    color:inherit;
+}
+
+#nav a{
+    color:inherit;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #03243D;
+    bottom: 0;
+    left:0;
+    margin:0;
+}
+
+footer p{
+    text-align: center;
+    margin:0;
+}
+
+
+#copyright-section{
+   margin:0;
+    font-size: smaller;
+    color:#dad9c9;
+    text-align: center;
+}

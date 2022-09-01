@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../main/weather.css" />
+    
+
+    <link rel="icon" type="image/x-icon" href="../media/logo-noname.png">
+             
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link id="font" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="../main/weather.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        WEATHER APP
+         
+     </header>
+    <div id="nav">
+        <a href="../index.html" class="navButton"><span  style="font-size: 42px; color: black;" class="material-symbols-outlined">
+            home
+            </span>Home</a>
+
+            <a href="../main/project.html" class="navButton"><span  style="font-size: 42px; color: black;" class="material-symbols-outlined">folder_open</span>Projects</a>
+    </div>
+
+  
+
+    <div id="weather-card" >
+        <div id="section">
+            <div id="search">
+                <input type="text" id="search-input" placeholder="Search Locations">
+                <button class="btn"  id="location-button"><span class="material-symbols-outlined" style="font-weight:bolder;">
+                    my_location
+                     </span></button>
+                 
+                <button class="btn" id="search-button" ><span class="material-symbols-outlined" style="font-weight:bolder;">
+                    search
+                    </span></button>
+
+
+            </div>
+        </div>
+            <div class="weather"  id="weather-info">
+                <img id="con-icon" alt="condition-icon" src="http://openweathermap.org/img/wn/02d@2x.png">
+                <div id="city1">
+                <h1 id="city">Antalya</h1>
+                <hr>
+                </div>
+                <div id="top-section">
+                <div id="temp">30°C </div>
+            
+                <div id="condition">Cler</div>
+                </div>
+                <div>Wind: </div>
+                <div class="wind">
+                    <div id="wind">5</div>
+                    <div id="wind-direction">5</div>
+                   
+                </div>
+                <div id="wind-arrow-box"  >
+                <span id="wind-arrow" class="material-symbols-outlined">
+                    arrow_downward
+                    </span>
+                   
+                </div>
+                <div id="map"></div>
+            </div>
+            
+    </div>
+    
+    <footer>
+           
+        <div id="copyright-section">
+            <p>Copyright &copy; 2022 Saygin Saracoglu</p>
+        </div>
+    </footer>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkucj2gPPLej04W8EzsUakrgxVru7meEc"
+    type="text/javascript">
+  </script>
+</body>
+</html>

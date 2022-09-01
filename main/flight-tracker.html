@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Finder</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../main/flight-tracker.css" />
+    
+
+    <link rel="icon" type="image/x-icon" href="../media/logo-noname.png">
+             
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link id="font" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="../main/flight-tracker.js" defer></script>
+</head>
+<header>
+    AIRCRAFT FINDER
+    
+</header>
+
+
+
+
+<body>
+    <div id="nav">
+        <a href="../index.html" class="navButton"><span  style="font-size: 42px; color: black;" class="material-symbols-outlined">
+            home
+            </span>Home</a>
+
+            <a href="../main/project.html" class="navButton"><span  style="font-size: 42px; color: black;" class="material-symbols-outlined">folder_open</span>Projects</a>
+    </div>
+  
+
+    <div id="aircraft-card" >
+        <div id="section" >
+            <div id="search" >
+                <input type="text" id="search-input" placeholder="Enter Aircraft's ICAO24 code">
+                
+                 
+                <button class="btn" id="search-button" ><span class="material-symbols-outlined" style="font-weight:bolder;">
+                    search
+                    </span></button>
+
+
+            </div>
+        </div>
+            <div class="aircraft"  id="aircraft-info" >
+                <div id="city1">
+                <h1 id="call-sign">THY4215</h1>
+                <p>Country of Registration: <img id="flag" src="https://countryflagsapi.com/png/br"></p>
+                
+                </div>
+               
+
+                <div id="top-section">
+                <div id="altitude"></div>
+                <div id="hdg"></div>
+                <div id="speed"></div>
+                <div id="squawk"></div>
+                </div>
+               
+
+
+
+
+                <div id="weather-title">Weather at Aircraft Position (Ground) </div>
+                <div id="temp"></div>
+                <h4>Wind</h4>
+                <div class="wind">
+                   
+                    <div id="wind">5</div>
+                    <div id="wind-direction">5</div>
+                    <div id="pressure">5</div>
+                </div>
+                <div id="wind-arrow-box"  >
+                <span id="wind-arrow" class="material-symbols-outlined">
+                    arrow_downward
+                    </span>
+                    
+                </div>
+                <div id="map"></div>
+               
+                    
+                
+            </div>
+       
+            
+    </div>
+    
+    <div class="popup" id="popup">
+        <img  src="../media/errorIcon.png" alt="errorIcon">
+        <h1 id="thanks">ERROR!</h1>
+        <h2>API service cannot provide data for this ICAO24 code.Please try another one</h2>
+        <button type="button" onclick="close_pop()">OK</button>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkucj2gPPLej04W8EzsUakrgxVru7meEc"
+      type="text/javascript">
+    </script>
+     <footer>
+           
+        <div id="copyright-section">
+            <p>Copyright &copy 2022 Saygin Saracoglu</p>
+        </div>
+    </footer>
+</body>
+</body>
+</html>
+
+
+

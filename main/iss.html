@@ -1,0 +1,107 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+   
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Iss Viewing</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../main/iss.css" />
+    
+
+    <link rel="icon" type="image/x-icon" href="../media/logo-noname.png">
+             
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link id="font" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    <!--!!!!!!!!!!!!!!!!! Place new elements under video tag! Otherwise they wont be visible!!!!!!!!!!!! -->
+    <video autoplay muted loop id="myVideo" >
+        <source src="../media/iss.mkv" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      
+
+    <div id="nav">
+        <a href="../index.html" class="navButton"><span  style="font-size: 42px; color: black;" class="material-symbols-outlined">
+            home
+            </span>Home</a>
+
+            <a href="../main/project.html" class="navButton"><span  style="font-size: 42px; color: black;" class="material-symbols-outlined">folder_open</span>Projects</a>
+    </div>
+    <header>
+        INTERNATIONAL SPACE STATION
+    </header>
+    <div id="sub-header"> <h3>Here you can check exact location of ISS and if its visible from your location or not based on cloud coverage and<br> visibility at your location as well as if it's dark enough outside to see it with naked eye </h3>
+        <h4>To continue click the circles below to get location data for both you and ISS then distance between you and ISS will appear</h4>
+    </div>
+   
+    <div id="sections">
+            <div  class="card">
+                <div id="card1" class="card__inner">
+                    <div class="card__face card__face--front">
+                        <div class="location-button" onclick="getIssPosition()"> 
+                            <p>ISS </p>
+                        </div>
+                    </div>
+                    <div class="card__face card__face--back">
+                            <h6 id="iss-title"></h6>
+                            <div id="iss-coordinates">
+                                <p id="iss-altitude"></p>
+                                <p id="iss-velocity"></p>
+                                <p id="iss-latitude"></p>
+                                <p id="iss-longitude"></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="card">
+                <div id="card2" class="card__inner">
+                    <div class="card__face card__face--front">
+                        <div class="location-button" onclick="getLocation()"> 
+                            <p>YOU </p>
+                        </div>
+                    </div>
+                        <div class="card__face card__face--back">
+                                <h4>Your coordinates</h4>
+                                <div id="your-coordinates">
+                                     <p id="your-latitude"></p>
+                                     <p id="your-longitude"></p>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="info-section">
+        <p id="visible"></p>
+        <div id="map"></div>
+        <p id="current_distance"></p>
+        
+    </div>
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkucj2gPPLej04W8EzsUakrgxVru7meEc"
+        type="text/javascript">
+    </script>
+    <script src="../main/iss.js"></script>
+    <footer>
+           
+        <div id="copyright-section">
+            <p>Copyright &copy; 2022 Saygin Saracoglu</p>
+        </div>
+    </footer>
+
+</body>
+</html>
