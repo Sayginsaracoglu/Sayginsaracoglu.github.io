@@ -1,5 +1,4 @@
 
-
 let weather = {
     "apiKey" : "1226e6dc93cc2969a1c3841eae91cace",
 }
@@ -481,7 +480,3 @@ async function getAircraftByICAO24(url){
     //     }
     //   });
     // }
-  
-
-
-    
