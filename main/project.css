@@ -247,6 +247,7 @@ footer{
     }
     footer{
         height: 15px;
+        margin-top: 5%;
     }
     .project{
         background-color: #0a304e;
