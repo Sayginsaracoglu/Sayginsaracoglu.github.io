@@ -1,5 +1,4 @@
 
-
 let weather = {
     "apiKey" : "1226e6dc93cc2969a1c3841eae91cace",
 }
@@ -225,18 +224,18 @@ async function getAircraftByICAO24(url){
         weather_info.classList.add('print-aircraft');
         }
 
-    document.querySelector("#location-button").addEventListener("click",function(){
+    //document.querySelector("#location-button").addEventListener("click",function(){
        
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(setCurrentLocationToLocalVar);
+       // if (navigator.geolocation) {
+          //  navigator.geolocation.getCurrentPosition(setCurrentLocationToLocalVar);
             
-            printWeather();
-            document.getElementById("search-input").value = '';
+         //   printWeather();
+        //    document.getElementById("search-input").value = '';
               
-          } else {
-            
-          }
-    })
+      //    } else {
+     //       
+     //     }
+    //})
 
 
 
@@ -481,7 +480,3 @@ async function getAircraftByICAO24(url){
     //     }
     //   });
     // }
-  
-
-
-    
