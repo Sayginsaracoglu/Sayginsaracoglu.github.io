@@ -532,6 +532,7 @@ footer{
         body{
             min-width: auto;
             min-height: auto;
+            
         }
         
         header{
@@ -543,10 +544,12 @@ footer{
             display: flex;
             justify-content: center;
             align-items: center;
+            
         }
 
         header img{
             transform: scale(2);
+            padding-left: 8%;
         }
 
         #sections{
@@ -558,6 +561,7 @@ footer{
             padding: auto;
             margin-top: 2%;
             padding-top: 18%;
+            padding-left: 6%;
         }
         #section1{
             min-width: none;
@@ -651,6 +655,45 @@ footer{
         .bar{
             width: 96%;
             margin-bottom: -9.3%;
+        }
+
+        #nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            position: fixed;
+            width: 170px;
+            height: 600px;
+            top:25%;
+            left:-125px;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 25px;
+            background-color: rgb(255, 255, 255);
+            transition: .5s;
+            box-shadow: 2px 2px 25px black;
+        }
+          
+        #nav:hover{
+            left: -10px;
+            top:25%;
+            transition: .5s;
+        } 
+          
+        .navButton{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+        }
+          
+        #nav a:link{
+            text-decoration: none;
+            color:inherit;
+        }
+        
+        #nav a{
+            color:inherit;
         }
     }
 

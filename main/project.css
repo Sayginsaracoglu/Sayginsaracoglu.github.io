@@ -243,6 +243,7 @@ footer{
        display: flex;
        flex-direction: column;
        margin-left: 7%;
+       transform: scale(.9);
 
     }
     footer{
@@ -268,10 +269,11 @@ footer{
         align-items: center;
       
         position: fixed;
-        width: 120px;
+        width: 170px;
         height: 600px;
         top:25%;
         bottom:-100px;
+        left:-130px;
         border-bottom-right-radius: 25px;
         border-top-right-radius: 25px;
         background-color: rgb(255, 255, 255);
@@ -302,3 +304,4 @@ footer{
     }
 
 }
+
