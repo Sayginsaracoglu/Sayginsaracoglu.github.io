@@ -154,7 +154,7 @@ header{
 
 .weather{
     width: 500px;
-    height: 734px;
+    height: 754px;
     background-color: #ffffff;
     border-radius: 15px;
     position: absolute;
@@ -200,12 +200,19 @@ header{
 }
 
 
+
 .wind{
     display: flex;
     justify-content: space-evenly;
     color: #000000;
     margin-top: 10%;
     text-transform:none ; 
+   
+}
+
+#wind-title{
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 #wind-arrow-box{
@@ -354,6 +361,11 @@ footer p{
     border-bottom-right-radius: 15px;
    
   
+}
+
+
+#second-line{
+    width: 75%;
 }
 
 @media only screen and (max-width: 982px) {

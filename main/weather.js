@@ -216,9 +216,9 @@ function getWeatherByCoord(weatherApiUrl,city,lat,lon){
         let condition = document.getElementById('condition');
         condition.innerHTML = weatherData.weather[0].description;
         let wind = document.getElementById('wind');
-        wind.innerHTML = weatherData.wind.speed + " km/h";
+        wind.innerHTML = "Speed: "+weatherData.wind.speed + " km/h";
         let windDir = document.getElementById('wind-direction');
-        windDir.innerHTML = weatherData.wind.deg;
+        windDir.innerHTML = "From: "+weatherData.wind.deg + "°";
         //dynamic arrow size change by wind speed
         let arrowSize = Math.floor(weatherData.wind.speed / 2)  + 26;
         let windArrow = document.getElementById('wind-arrow');
